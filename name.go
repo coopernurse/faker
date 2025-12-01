@@ -70,10 +70,10 @@ func FullName() string {
 		i = 0
 	}
 	name := templates[i]
-	name = strings.Replace(name, "{first_name}", FirstName(), -1)
-	name = strings.Replace(name, "{last_name}", LastName(), -1)
-	name = strings.Replace(name, "{prefix}", NamePrefix(), -1)
-	name = strings.Replace(name, "{suffix}", NameSuffix(), -1)
+	name = strings.ReplaceAll(name, "{first_name}", FirstName())
+	name = strings.ReplaceAll(name, "{last_name}", LastName())
+	name = strings.ReplaceAll(name, "{prefix}", NamePrefix())
+	name = strings.ReplaceAll(name, "{suffix}", NameSuffix())
 	return name
 }
 
