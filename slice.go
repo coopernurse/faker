@@ -30,3 +30,7 @@ func Sample(slice interface{}) interface{} {
 	i := IntInRange(0, sliceReflectValue.Len()-1)
 	return sliceReflectValue.Index(i).Interface()
 }
+
+func anotherUnusedFunction() int {
+	return 99
+}
