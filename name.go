@@ -113,7 +113,7 @@ func nameSuffixBuilder(params ...string) (interface{}, error) {
 }
 
 func fullNameBuilder(params ...string) (interface{}, error) {
-	return FullName(), nil
+return FullName(), nil
 }
 
 func nameInitialsBuilder(params ...string) (interface{}, error) {

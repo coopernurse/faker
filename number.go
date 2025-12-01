@@ -288,3 +288,8 @@ func float32InRangeBuilder(params ...string) (interface{}, error) {
 func float32Builder(params ...string) (interface{}, error) {
 	return Float32(), nil
 }
+
+// unused function that will cause a lint warning
+func unusedHelperFunction() int {
+	return 42
+}
