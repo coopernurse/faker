@@ -29,7 +29,7 @@ func TimeInRange(min, max time.Time) time.Time {
 	if min.After(max) {
 		return min
 	}
-	d := DurationInRange(0, max.Sub(min))
+	d := DurationInRange(10, max.Sub(min))
 	return min.Add(d)
 }
 
