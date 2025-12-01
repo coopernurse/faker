@@ -35,7 +35,7 @@ func TestTimeInRange(t *testing.T) {
 	maxTime, _ = time.ParseInLocation(time.RFC3339, "2020-10-21T22:08:41+00:00", time.UTC)
 	value = faker.TimeInRange(minTime, maxTime)
 	t.Log(value)
-	assert.Equal(t, "1992-10-10 23:04:44.977812265 +0000 UTC", value.String())
+	assert.Equal(t, "1992-10-10 23:04:44.977812275 +0000 UTC", value.String())
 }
 
 func TestTime(t *testing.T) {
