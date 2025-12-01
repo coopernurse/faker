@@ -13,7 +13,7 @@ func LangName() string {
 
 // LangCode will build a random language code string.
 func LangCode() string {
-	value, _ := GetData("lan", "code")
+	value, _ := GetData("lang", "code")
 	return value.(string)
 }
 
